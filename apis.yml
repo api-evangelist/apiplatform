@@ -1,23 +1,69 @@
 aid: apiplatform
+
 name: Apiplatform.io
-description: 'Apiplatform.io is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Apiplatform.io provides a rapid API engineering and management platform that enables developers and enterprises to design, document, secure, and monitor APIs efficiently. The service offers tools for API lifecycle management, including versioning, testing, analytics, and developer portal capabilities, helping teams accelerate integration and maintain high-quality API services.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apiplatform/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-20 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-20'
+
 modified: '2026-10-20'
+
 tags:
 - Company
-apis: []
+- API
+- Platform
+- Management
+- Engineering
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/apiplatform-hosts.yml
+- type: Vendors
+  url: vendors/apiplatform-vendors.yml
+- type: DomainSecurity
+  url: security/apiplatform-domain-security.yml
 - type: Website
   url: https://apiplatform.io/
+- type: Documentation
+  url: https://apiplatform.io/docs
+- type: APIReference
+  url: https://apiplatform.io/api
+- type: Pricing
+  url: https://apiplatform.io/pricing
+- type: Blog
+  url: https://apiplatform.io/blog
+- type: TermsOfService
+  url: https://apiplatform.io/terms
+- type: PrivacyPolicy
+  url: https://apiplatform.io/privacy
+- type: SignUp
+  url: https://apiplatform.io/signup
+- type: Login
+  url: https://apiplatform.io/login
+- type: Support
+  url: https://apiplatform.io/support
+
+apis: []
+x-enrichment:
+  date: '2026-10-20'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
